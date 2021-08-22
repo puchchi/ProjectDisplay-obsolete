@@ -1,20 +1,23 @@
 /* Main Header */
-.header .flex{
+
+.header .flex {
     justify-content: space-between;
     height: 5rem;
     background-color: var(--color-background-white);
 }
 
-.header span{
+.header span {
     font-size: 2.5rem;
 }
 
-.first-title{
+.first-title {
     color: var(--color-primary);
 }
 
+
 /* search input */
-.search-container{
+
+.search-container {
     display: flex;
     flex: auto;
     border-radius: 0.6rem;
@@ -23,13 +26,13 @@
     box-shadow: 0 1px 3px var(--color-box-shadow-dark);
 }
 
-.search-edit{
+.search-edit {
     position: relative;
     display: inline-block;
     width: 100%;
 }
 
-.search-edit input{
+.search-edit input {
     padding: 0 .6rem;
     border-radius: 0 0.6rem 0.6rem 0;
     border: 0;
@@ -38,12 +41,12 @@
     font-weight: 500;
 }
 
-.search-edit input::placeholder{
+.search-edit input::placeholder {
     font-style: normal;
     color: var(--color-text-darker);
 }
 
-.search-btn{
+.search-btn {
     justify-content: flex-start;
     border: 1px solid var(--color-text-while);
     background-color: var(--color-text-while);
@@ -54,36 +57,49 @@
     padding: 0.2rem 0 0 0.8rem;
 }
 
-.search-btn svg{
+.search-btn svg {
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.search-btn svg g{
+.search-btn svg g {
     fill: var(--color-text-darker);
 }
 
+
 /* Login signin button */
-.sign-in{
+
+.sign-in {
     color: var(--color-primary);
 }
 
-hr.header-separator{
-    height:2px;
-    border-width:0;
-    color:var(--color-primary-light);
+hr.header-separator {
+    height: 2px;
+    border-width: 0;
+    color: var(--color-primary-light);
     opacity: 0.25;
-    background-color:var(--color-primary-light);    
+    background-color: var(--color-primary-light);
     box-shadow: 0 1px 3px var(--color-primary-light);
 }
 
 .sign-in,
-.join-now{
-    height:3.4rem;
+.join-now {
+    height: 3.4rem;
     margin: 0.3rem;
 }
 
-.join-now{
+.join-now,
+.join-now:hover {
     color: var(--color-text-darker);
     border: 2px solid transparent;
+    background-color: transparent;
+}
+
+.join-now:hover {
+    color: var(--color-primary);
+}
+
+.sign-in:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text-white);
 }

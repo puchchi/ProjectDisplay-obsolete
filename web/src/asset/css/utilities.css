@@ -11,12 +11,16 @@
     display: inline-block;
     padding: 0.4rem 1.4rem;
     cursor: pointer;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-light);
     border: none;
     border-radius: 0.5rem;
     font-size: 1.2rem;
     color: var(--color-text-white);
     height: 4rem;
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
 }
 
 .btn-outline {
@@ -126,6 +130,7 @@ input[type="password"] {
     top: 0;
     width: 100%;
     background-color: var(--color-background-white);
+    z-index: 3;
 }
 
 
@@ -457,11 +462,13 @@ h5 {
 
 /* Color */
 
-.color-fb {
+.color-fb,
+.color-fb:hover {
     background-color: var(--color-facebook);
 }
 
-.color-google {
+.color-google,
+.color-google:hover {
     background-color: var(--color-google);
 }
 
