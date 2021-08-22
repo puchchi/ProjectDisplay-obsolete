@@ -168,8 +168,26 @@ input[type="password"] {
     cursor: pointer;
 }*/
 
-.carousel-control:hover {
-    opacity: 1;
+.carousel-control {
+    display: block;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    outline: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.carousel-control.left {
+    left: 3rem;
+    right: auto;
+}
+
+.carousel-control.right {
+    left: auto;
+    right: 3rem;
 }
 
 .carousel-circle {
@@ -180,18 +198,18 @@ input[type="password"] {
     border-radius: 50%;
     display: inline-block;
     align-content: center;
-    font-weight: 400;
-}
-
-.carousel-circle:hover {
-    background-color: var(--color-text-darkest);
-}
-
-.carousel-circle>svg {
+    opacity: 0.5;
     color: var(--color-text-darkest);
 }
 
-.carousel-circle>svg:hover {
+.carousel-circle>svg {
+    display: inline-block;
+    margin-left: 0.4rem;
+}
+
+.carousel-circle:hover {
+    opacity: 1;
+    background-color: var(--color-text-darkest);
     color: var(--color-text-white);
 }
 

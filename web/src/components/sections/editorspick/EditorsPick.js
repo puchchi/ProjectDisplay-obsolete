@@ -8,7 +8,7 @@ import editorImage3 from '../../../asset/images/annie-spratt-1Psmw2xEa0g-unsplas
 import profilePic3 from '../../../asset/images/pexels-andrea-piacquadio-3775077.png';
 import editorImage4 from '../../../asset/images/vinicius-amnx-amano-17NCG_wOkMY-unsplash.png';
 import profilePic4 from '../../../asset/images/pexels-andrea-piacquadio-3775077.png';
-//import { useCarousel } from '../../widgets/carousel/carousel.js';
+
 //import InfiniteCarousel from 'react-leaf-carousel';
 import InfiniteCarousel from '../../widgets/carousel/infinitecarousel/InfiniteCarousel';
 import CarouselArrow from '../../widgets/carousel/CarouselArrow';
@@ -61,13 +61,6 @@ function EditorsPick() {
     }
     ]
 
-
-    const [firstArtistId, setFirstArtistId] = useState(1)
-
-    //const length = slides.length;
-    //const [active, setActive, handlers, style] = useCarousel(length, interval);
-
-
     return (
         <section className="mt-9">
             <div className="editors-pick-text">
@@ -100,82 +93,62 @@ function EditorsPick() {
             </div>
             */}
 
-            {/*
-            <div className="carousel">
-                <ol className="carousel-indicators">
-                    {slides.map((_, index) => (
-                        <li
-                            onClick={() => setActive(index)}
-                            key={index}
-                            className={`${active === index ? "active" : ""}`}
-                        />
-                    ))}
-                </ol>
-                <div className="carousel-content" {...handlers} style={style}>
-                    <div className="carousel-item">{slides[slides.length - 1]}</div>
-                    {slides.map((slide, index) => (
-                        <div className="carousel-item" key={index}>
-                            {slide}
-                        </div>
-                    ))}
-                    <div className="carousel-item">{slides[0]}</div>
-                </div>
+            <div className="pt-2">
+                <InfiniteCarousel
+                    breakpoints={[
+                        {
+                            breakpoint: 500,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2,
+                            },
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3,
+                            },
+                        },
+                    ]}
+                    arrow={true}
+                    swipe={true}
+                    scrollOnDevice={false}
+                    dots={false}
+                    showSides={false}
+                    sidesOpacity={.5}
+                    sideSize={.1}
+                    slidesToScroll={1}
+                    slidesToShow={4}
+                    nextArrow={CarouselArrow({ next: true })}
+                    prevArrow={CarouselArrow({ next: false })}
+                >
+                    <div className="editors-pick-item">
+                        <img src={editorImage1} alt="" />
+                    </div>
+                    <div className="editors-pick-item">
+                        <img src={editorImage2} alt="" />
+                    </div>
+                    <div className="editors-pick-item">
+                        <img src={editorImage3} alt="" />
+                    </div>
+                    <div className="editors-pick-item">
+                        <img src={editorImage4} alt="" />
+                    </div>
+                    <div className="editors-pick-item">
+                        <img src={editorImage1} alt="" />
+                    </div>
+                    <div className="editors-pick-item">
+                        <img src={editorImage2} alt="" />
+                    </div>
+                    <div className="editors-pick-item">
+                        <img src={editorImage3} alt="" />
+                    </div>
+                    <div className="editors-pick-item">
+                        <img src={editorImage4} alt="" />
+                    </div>
+                </InfiniteCarousel>
             </div>
-                    */}
-            <InfiniteCarousel
-                breakpoints={[
-                    {
-                        breakpoint: 500,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                        },
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                        },
-                    },
-                ]}
-                arrow={true}
-                swipe={true}
-                scrollOnDevice={false}
-                dots={false}
-                showSides={false}
-                sidesOpacity={.5}
-                sideSize={.1}
-                slidesToScroll={1}
-                slidesToShow={4}
-                nextArrow={CarouselArrow({next:true})}
-                prevArrow={CarouselArrow({next:false})}
-            >
-                <card className="editors-pick-item">
-                    <img src={editorImage1} alt="" />
-                </card>
-                <card className="editors-pick-item">
-                    <img src={editorImage2} alt="" />
-                </card>
-                <card className="editors-pick-item">
-                    <img src={editorImage3} alt="" />
-                </card>
-                <card className="editors-pick-item">
-                    <img src={editorImage4} alt="" />
-                </card>
-                <card className="editors-pick-item">
-                    <img src={editorImage1} alt="" />
-                </card>
-                <card className="editors-pick-item">
-                    <img src={editorImage2} alt="" />
-                </card>
-                <card className="editors-pick-item">
-                    <img src={editorImage3} alt="" />
-                </card>
-                <card className="editors-pick-item">
-                    <img src={editorImage4} alt="" />
-                </card>
-            </InfiniteCarousel>
         </section>
     )
 }

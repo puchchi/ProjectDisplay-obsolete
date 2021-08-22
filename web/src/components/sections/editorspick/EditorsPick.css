@@ -54,32 +54,3 @@
     margin-left: -3rem;
 }
 */
-
-.carousel-control.left {
-    left: 15px;
-    right: auto;
-}
-
-.carousel-control.right {
-    left: auto;
-    right: 15px;
-}
-
-.carousel-control {
-    display: block;
-    background: none;
-    border: none;
-    position: absolute;
-    top: 50%;
-    z-index: 2;
-    outline: none;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-span.carousel-circle>svg {
-    display: inline-block;
-    padding-left: 0.5rem;
-    width: 3.5rem;
-    height: 3.5rem;
-}
