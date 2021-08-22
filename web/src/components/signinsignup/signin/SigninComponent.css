@@ -1,0 +1,16 @@
+.login-section .flex {
+    max-width: 32rem;
+}
+
+.login-section button {
+    width: 100%;
+}
+
+.social-login {
+    gap: 1.5rem;
+}
+
+.signup-link {
+    color: var(--color-underline);
+    text-decoration: underline;
+}

@@ -1,0 +1,85 @@
+/* Editors pick */
+
+.editors-pick-text {
+    text-align: center;
+}
+
+.editors-pick-text>p {
+    max-width: 50rem;
+    margin: auto;
+}
+
+
+/*
+.editors-pick-img>card>img {
+    max-width: 100%;
+    height: inherit;
+}
+
+.editors-pick-img>card:not(.carousel-control) {
+    height: 100%;
+    grid-row: 1;
+}
+
+.editors-pick-item:first-of-type {
+    grid-column: 1;
+}
+
+.editors-pick-item:last-of-type {
+    grid-column: 4;
+}
+
+.carousel-control.left {
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: flex-start;
+    margin-left: 3rem;
+}
+
+.carousel-control.right {
+    grid-row: 1;
+    grid-column: 4;
+    justify-content: flex-end;
+    margin-left: -3rem;
+}
+
+
+.carousel-control.left {
+    justify-content: flex-start;
+    margin-left: 3rem;
+}
+
+.carousel-control.right {
+    justify-content: flex-end;
+    margin-left: -3rem;
+}
+*/
+
+.carousel-control.left {
+    left: 15px;
+    right: auto;
+}
+
+.carousel-control.right {
+    left: auto;
+    right: 15px;
+}
+
+.carousel-control {
+    display: block;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    outline: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+span.carousel-circle>svg {
+    display: inline-block;
+    padding-left: 0.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
