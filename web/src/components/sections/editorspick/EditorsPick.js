@@ -12,52 +12,64 @@ import profilePic4 from '../../../asset/images/pexels-andrea-piacquadio-3775077.
 //import InfiniteCarousel from 'react-leaf-carousel';
 import InfiniteCarousel from '../../widgets/carousel/infinitecarousel/InfiniteCarousel';
 import CarouselArrow from '../../widgets/carousel/CarouselArrow';
+import EditorsPickImageComponent from './EditorsPickImageComponent';
 
 function EditorsPick() {
 
     // Get editors pick. It will be a network call.
     // TODO_API
-    const slides = [{
+    // API detail{
+    //      profile image should be in same proportion.
+    //      
+    //}
+
+    const picks = [{
         "artist_id": 1,
         "category": "Guitar",
         "name": "John 1",
         "profilePic": profilePic1,
-        "coverPic": editorImage1
+        "coverPic": editorImage1,
+        "profileURL": "/profile/url1"
     },
     {
         "artist_id": 2,
         "category": "Interior Designer",
         "name": "Johny 2",
         "profilePic": profilePic2,
-        "coverPic": editorImage2
+        "coverPic": editorImage2,
+        "profileURL": "/profile/url2"
     },
     {
         "artist_id": 3,
         "category": "Painter",
         "name": "John Doe 3",
         "profilePic": profilePic3,
-        "coverPic": editorImage3
+        "coverPic": editorImage3,
+        "profileURL": "/profile/url3"
     },
     {
         "artist_id": 4,
         "category": "Guitar",
         "name": "Johnny Donny 4",
         "profilePic": profilePic4,
-        "coverPic": editorImage4
+        "coverPic": editorImage4,
+        "profileURL": "/profile/url4"
     },
     {
         "artist_id": 5,
         "category": "Guitar",
         "name": "Johnny Donny 5",
         "profilePic": profilePic4,
-        "coverPic": editorImage4
+        "coverPic": editorImage4,
+        "profileURL": "/profile/url5"
     },
     {
         "artist_id": 6,
         "category": "Guitar",
         "name": "Johnny Donny 6",
         "profilePic": profilePic3,
-        "coverPic": editorImage2
+        "coverPic": editorImage2,
+        "profileURL": "/profile/url6"
     }
     ]
 
@@ -69,29 +81,6 @@ function EditorsPick() {
                     are making our head turn.
                 </p>
             </div>
-
-            {/*
-            <div className="grid grid-4 editors-pick-img mt-3">
-                <div className="carousel-control left">
-                    <span className="carousel-circle">&#10094;</span>
-                </div>
-                <card className="editors-pick-item">
-                    <img src={editorImage1} alt="" />
-                </card>
-                <card className="editors-pick-item">
-                    <img src={editorImage2} alt="" />
-                </card>
-                <card className="editors-pick-item">
-                    <img src={editorImage3} alt="" />
-                </card>
-                <card className="editors-pick-item">
-                    <img src={editorImage4} alt="" />
-                </card>
-                <div className="carousel-control right">
-                    <span className="carousel-circle">&#10095;</span>
-                </div>
-            </div>
-            */}
 
             <div className="pt-2">
                 <InfiniteCarousel
@@ -123,30 +112,17 @@ function EditorsPick() {
                     nextArrow={CarouselArrow({ next: true })}
                     prevArrow={CarouselArrow({ next: false })}
                 >
-                    <div className="editors-pick-item">
-                        <img src={editorImage1} alt="" />
-                    </div>
-                    <div className="editors-pick-item">
-                        <img src={editorImage2} alt="" />
-                    </div>
-                    <div className="editors-pick-item">
-                        <img src={editorImage3} alt="" />
-                    </div>
-                    <div className="editors-pick-item">
-                        <img src={editorImage4} alt="" />
-                    </div>
-                    <div className="editors-pick-item">
-                        <img src={editorImage1} alt="" />
-                    </div>
-                    <div className="editors-pick-item">
-                        <img src={editorImage2} alt="" />
-                    </div>
-                    <div className="editors-pick-item">
-                        <img src={editorImage3} alt="" />
-                    </div>
-                    <div className="editors-pick-item">
-                        <img src={editorImage4} alt="" />
-                    </div>
+
+                    {picks.map((pick) =>
+                        <EditorsPickImageComponent category={pick.category}
+                            name={pick.name}
+                            profilePic={pick.profilePic}
+                            coverPic={pick.coverPic}
+                            profileURL={pick.profileURL}
+                        />
+                    )}
+
+
                 </InfiniteCarousel>
             </div>
         </section>

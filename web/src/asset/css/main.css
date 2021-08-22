@@ -11,6 +11,7 @@
     --color-text-white: #fff;
     --color-background-white: #ffffff;
     --color-box-shadow-dark: rgba(0, 0, 0, 0.1);
+    --color-box-shadow-darker: rgba(0, 0, 0, 0.5);
     --color-facebook: #3C66C4;
     --color-google: #E02F2F;
 }
@@ -26,6 +27,18 @@ html {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     /*font-size: 1.2rem;*/
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img {
+    color: var(--color-text-darker);
 }
 
 body {
