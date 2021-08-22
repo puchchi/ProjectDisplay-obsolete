@@ -1,0 +1,12 @@
+.build-portfolio-section {
+    justify-content: left;
+    align-items: left;
+}
+
+.build-portfolio-text-section {
+    max-width: 40rem;
+}
+
+.build-portfolio-image-section {
+    width: 50rem;
+}
