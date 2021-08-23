@@ -1,12 +1,46 @@
 .build-portfolio-section {
+    height: 60rem;
+}
+
+.build-portfolio-section>div {
     justify-content: left;
     align-items: left;
+    width: 1200px;
+    padding: 0 40px;
 }
 
 .build-portfolio-text-section {
-    max-width: 40rem;
+    align-items: start;
+    max-width: 45rem;
+    gap: 1rem;
+    padding-right: 6rem;
+}
+
+.build-portfolio-text-section .btn {
+    width: 25rem;
+    align-items: center;
 }
 
 .build-portfolio-image-section {
-    width: 50rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.build-portfolio-image-section img:nth-child(1) {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.build-portfolio-image-section img:nth-child(2) {
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+
+.hanging-image {
+    position: absolute;
+    padding-left: 0.5rem;
+    height: inherit;
 }

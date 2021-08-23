@@ -119,6 +119,7 @@ function EditorsPick() {
                             profilePic={pick.profilePic}
                             coverPic={pick.coverPic}
                             profileURL={pick.profileURL}
+                            key={pick.artist_id}
                         />
                     )}
 

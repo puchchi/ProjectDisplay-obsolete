@@ -1,5 +1,5 @@
 import React from 'react'
-import bannerImage from '../../asset/images/brooke-lark-cqOZcjOOmRw-unsplash.png';
+import {bannerImage} from '../../../../asset/js/ImageAsset'
 
 function TopMostBanner() {
     return (
