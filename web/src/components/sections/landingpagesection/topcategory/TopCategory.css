@@ -1,0 +1,23 @@
+section.top-category-section {
+    text-align: center;
+    justify-content: center;
+}
+
+section.top-category-section div.grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+section.top-category-section div img {
+    width: 8rem;
+}
+
+section.top-category-section .btn {
+    max-width: 30rem;
+    margin: 4rem auto;
+}
+
+section.top-category-section div a {
+    cursor: pointer;
+}

@@ -39,9 +39,8 @@ function BuildPortfolioSection() {
     }
 
     useLayoutEffect(() => {
-        if (rightImageStyle.height != "0px") {
             CalculateRightImageStyle();
-        }
+
         return () => {
         }
     }, [height, width])
