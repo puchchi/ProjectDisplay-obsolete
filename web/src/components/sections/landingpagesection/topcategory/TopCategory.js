@@ -61,13 +61,13 @@ function TopCategory() {
 
     return (
         <section className="top-category-section container mt-8">
-            <h1>Top Category</h1>
+            <h1 className="fw-6">Top Category</h1>
             <div className="grid mt-5">
                 {categories.map((category) => {
                     return (
                         <a key={category.key} href={category.url}>
                             <img src={category.src} />
-                            <h5>{category.title}</h5>
+                            <h5 className="fw-5">{category.title}</h5>
                             <p>{category.detail}</p>
                         </a>
                     )

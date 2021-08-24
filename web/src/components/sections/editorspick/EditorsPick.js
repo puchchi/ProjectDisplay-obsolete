@@ -76,7 +76,7 @@ function EditorsPick() {
     return (
         <section className="mt-9">
             <div className="editors-pick-text">
-                <h2 className="fw-600">Editors Pick</h2>
+                <h2 className="fw-6">Editors Pick</h2>
                 <p>Every week we hand-pick some of best new handmade items from our collection. These beautifull creation
                     are making our head turn.
                 </p>

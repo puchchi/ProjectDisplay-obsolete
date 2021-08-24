@@ -1,0 +1,17 @@
+.landingpage-section5-text {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+}
+
+.landingpage-section5.grid {
+    gap: 5rem
+}
+
+.landingpage-section5 a {
+    width: 25rem;
+}
+
+.landingpage-section5 img {
+    max-height: 40rem;
+}
