@@ -204,12 +204,12 @@ input[type="password"] {
     height: 5rem;
     width: 5rem;
     font-size: 4rem;
-    background-color: var(--color-text-white);
+    background-color: var(--color-carousel-background);
     border-radius: 50%;
     display: inline-block;
     align-content: center;
     opacity: 0.5;
-    color: var(--color-text-darkest);
+    color: var(--color-carousel-color);
 }
 
 .carousel-circle svg {
@@ -219,8 +219,8 @@ input[type="password"] {
 
 .carousel-circle:hover {
     opacity: 1;
-    background-color: var(--color-text-darkest);
-    color: var(--color-text-white);
+    background-color: var(--color-carousel-color)!important;
+    color: var(--color-carousel-color2);
 }
 
 h1 {

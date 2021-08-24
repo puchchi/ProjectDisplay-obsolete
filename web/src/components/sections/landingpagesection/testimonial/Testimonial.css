@@ -1,4 +1,4 @@
-section.testimonial.grid {
+div.testimonial.grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 7rem;
 }
@@ -51,4 +51,39 @@ div.testimonial-userprofile {
 
 div.testimonial-userprofile img {
     max-width: 7rem;
+}
+
+section.testimonial-section span.carousel-circle {
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-carousel-background2);
+    color: var(--color-carousel-color2);
+}
+
+section.testimonial-section span.carousel-circle svg {
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+    margin: 0;
+}
+
+section.testimonial-section ul.InfiniteCarouselDots {
+    margin-top: 1rem;
+    top: 105%;
+}
+
+section.testimonial-section i.InfiniteCarouselDotActiveIcon {
+    background-color: var(--color-primary);
+}
+
+section.testimonial-section div.testimonial-signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+section.testimonial-section div.testimonial-signup a {
+    width: 25rem;
 }

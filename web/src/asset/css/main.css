@@ -9,10 +9,14 @@
     --color-text-darkest: #161f2b;
     --color-text-darker: #333333;
     --color-text-gray: #b8b5b5;
-    --color-text-white: #fff;
+    --color-text-white: #ffffff;
     --color-background-white: #ffffff;
     --color-box-shadow-dark: rgba(0, 0, 0, 0.1);
     --color-box-shadow-darker: rgba(0, 0, 0, 0.5);
+    --color-carousel-background: #ffffff;
+    --color-carousel-background2: #bbbbbb;
+    --color-carousel-color: #161f2b;
+    --color-carousel-color2: #ffffff;
     --color-facebook: #3C66C4;
     --color-google: #E02F2F;
 }
