@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 import './EditorsPick.css'
-import editorImage1 from '../../../asset/images/alex-suprun-FcGcwAmUqRQ-unsplash.png';
-import profilePic1 from '../../../asset/images/pexels-andrea-piacquadio-3775077.png';
-import editorImage2 from '../../../asset/images/anete-lusina-zwsHjakE_iI-unsplash.png';
-import profilePic2 from '../../../asset/images/pexels-andrea-piacquadio-3775077.png';
-import editorImage3 from '../../../asset/images/annie-spratt-1Psmw2xEa0g-unsplash.png';
-import profilePic3 from '../../../asset/images/pexels-andrea-piacquadio-3775077.png';
-import editorImage4 from '../../../asset/images/vinicius-amnx-amano-17NCG_wOkMY-unsplash.png';
-import profilePic4 from '../../../asset/images/pexels-andrea-piacquadio-3775077.png';
+import editorImage1 from '../../../../asset/images/alex-suprun-FcGcwAmUqRQ-unsplash.png';
+import profilePic1 from '../../../../asset/images/pexels-andrea-piacquadio-3775077.png';
+import editorImage2 from '../../../../asset/images/anete-lusina-zwsHjakE_iI-unsplash.png';
+import profilePic2 from '../../../../asset/images/pexels-andrea-piacquadio-3775077.png';
+import editorImage3 from '../../../../asset/images/annie-spratt-1Psmw2xEa0g-unsplash.png';
+import profilePic3 from '../../../../asset/images/pexels-andrea-piacquadio-3775077.png';
+import editorImage4 from '../../../../asset/images/vinicius-amnx-amano-17NCG_wOkMY-unsplash.png';
+import profilePic4 from '../../../../asset/images/pexels-andrea-piacquadio-3775077.png';
 
 //import InfiniteCarousel from 'react-leaf-carousel';
-import InfiniteCarousel from '../../widgets/carousel/infinitecarousel/InfiniteCarousel';
-import CarouselArrow from '../../widgets/carousel/CarouselArrow';
+import InfiniteCarousel from '../../../widgets/carousel/infinitecarousel/InfiniteCarousel';
+import CarouselArrow from '../../../widgets/carousel/CarouselArrow';
 import EditorsPickImageComponent from './EditorsPickImageComponent';
 
 function EditorsPick() {
@@ -105,7 +105,7 @@ function EditorsPick() {
                     scrollOnDevice={false}
                     dots={false}
                     showSides={false}
-                    sidesOpacity={.5}
+                    sidesOpacity={1}
                     sideSize={.1}
                     slidesToScroll={1}
                     slidesToShow={4}

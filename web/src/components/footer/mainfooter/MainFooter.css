@@ -1,0 +1,55 @@
+section.main-footer-section {
+    background-color: var(--color-footer-dark);
+}
+
+section.main-footer-section>div {
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: start;
+}
+
+section.main-footer-section div.flex {
+    align-items: flex-start;
+}
+
+section.main-footer-section div.about-us-div>* {
+    color: var(--color-primary);
+}
+
+section.main-footer-section div.about-us-div {
+    gap: 1.5rem;
+    padding-right: 6rem;
+}
+
+section.main-footer-section div.about-us-div div.social-links>* {
+    margin-right: 1rem;
+    width: 2rem;
+    height: 100%;
+}
+
+section.main-footer-section div.quick-links>*,
+section.main-footer-section div.contact-us p {
+    color: var(--color-text-white);
+}
+
+section.main-footer-section div.quick-links a,
+section.main-footer-section div.contact-us p {
+    font-weight: 300;
+}
+
+section.main-footer-section div.quick-links a {
+    text-decoration: underline;
+}
+
+section.main-footer-section div.contact-us p {
+    color: var(--color-text-white);
+}
+
+section.main-footer-section div.contact-us>div {
+    display: flex;
+    gap: 0.8rem;
+}
+
+section.main-footer-section div.contact-us svg {
+    margin-top: 0.5rem;
+    color: var(--color-primary);
+}

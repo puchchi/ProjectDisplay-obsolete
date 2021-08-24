@@ -1,0 +1,7 @@
+section.mini-footer-section {
+    background-color: var(--color-footer-darker);
+}
+
+section.mini-footer-section p {
+    color: var(--color-text-white);
+}

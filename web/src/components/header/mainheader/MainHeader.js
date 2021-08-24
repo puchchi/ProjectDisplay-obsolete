@@ -20,7 +20,7 @@ function MainHeader() {
                 <div className="header container">
                     <div className="flex">
                         <Link to="/">
-                            <span className="first-title fw-9">Bee</span>
+                            <span className="first-title fw-6">Bee</span>
                             <span>lance</span>
                         </Link>
                         <div className="flex">
