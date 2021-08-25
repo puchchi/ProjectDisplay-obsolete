@@ -1,7 +1,22 @@
 section.mini-footer-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+}
+
+section.mini-footer-section {
     background-color: var(--color-footer-darker);
 }
 
 section.mini-footer-section p {
     color: var(--color-text-white);
+}
+
+section.mini-footer-section.light {
+    background-color: var(--color-footer-light);
+}
+
+section.mini-footer-section.light p {
+    color: var(--color-text-darkest);
 }

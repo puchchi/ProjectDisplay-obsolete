@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Home from './components/pages/Home';
 import Signin from './components/pages/Signin';
+import Signup from './components/pages/Signup';
 
 
 function App() {
@@ -22,10 +23,10 @@ function App() {
           </Route>
 
           <Route exact path="/signin">
-            <Signin/>
+            <Signin />
           </Route>
           <Route exact path="/signup" >
-
+            <Signup />
           </Route>
           <Route exact path="/forgotpassword" >
 

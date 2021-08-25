@@ -3,6 +3,7 @@ import {Link } from "react-router-dom";
 
 import './MainHeader.css'
 import Button from '../../widgets/buttons/Button'
+import HeaderTitle from '../../widgets/headertitle/HeaderTitle';
 
 function MainHeader() {
     const [searchInput, setSearchInput] = useState("");
@@ -19,10 +20,7 @@ function MainHeader() {
             <div className="sticky">
                 <div className="header container">
                     <div className="flex">
-                        <Link to="/">
-                            <span className="first-title fw-6">Bee</span>
-                            <span>lance</span>
-                        </Link>
+                        <HeaderTitle/>
                         <div className="flex">
                             <div className="search-container ">
                                 <button className="search-btn" type="submit">

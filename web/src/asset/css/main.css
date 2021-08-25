@@ -19,6 +19,7 @@
     --color-carousel-color2: #ffffff;
     --color-footer-dark: #333333;
     --color-footer-darker: #242424;
+    --color-footer-light: #EBEBEB;
     --color-facebook: #3C66C4;
     --color-google: #E02F2F;
 }
@@ -52,6 +53,15 @@ body {
     line-height: 1.6;
     font-size: 1.2rem;
     /* If changing here, then change for placeholder as well */
+    position: relative;
+    min-height: 97.7vh;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 5rem;
+    /* Set same as mini footer's height */
 }
 
 img {

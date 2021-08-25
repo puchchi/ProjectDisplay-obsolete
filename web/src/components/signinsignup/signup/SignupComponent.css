@@ -1,0 +1,15 @@
+.signup-section button {
+    width: 100%;
+}
+
+.signup-section a {
+    text-decoration: underline;
+}
+
+.signup-section span {
+    text-align: center;
+}
+
+.social-login {
+    gap: 1rem;
+}

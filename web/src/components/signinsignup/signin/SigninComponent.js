@@ -4,7 +4,6 @@ import * as Icon from "react-icons/fi";
 import Checkbox from "react-custom-checkbox";
 
 import './SigninComponent.css';
-import Button from '../../widgets/buttons/Button';
 import FacebookSignin from '../socialsignin/FacebookSignin';
 import GoogleSignin from '../socialsignin/GoogleSignin';
 
@@ -25,7 +24,7 @@ function SigninComponent() {
 
     return (
         <>
-            <section className="flex pt-6 mt-3 login-section">
+            <section className="login-section flex pt-6 mt-3 mini-container m-auto">
                 <div>
                     <form onSubmit={handleSubmit}>
                         <h2 className="fw-6">Login</h2>
@@ -63,7 +62,7 @@ function SigninComponent() {
                         <GoogleSignin/>                        
                     </div>
 
-                    <div className="flex mt-3">
+                    <div className="flex py-3">
                         <span>Don't have an account? 
                             <Link className="signup-link" to="/signup">Sign up</Link>
                         </span>
