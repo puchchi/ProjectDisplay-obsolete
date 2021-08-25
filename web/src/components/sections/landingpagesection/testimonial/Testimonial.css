@@ -87,3 +87,20 @@ section.testimonial-section div.testimonial-signup {
 section.testimonial-section div.testimonial-signup a {
     width: 25rem;
 }
+
+
+/*Responsive details*/
+
+
+/* Extra small devices (phones, 500px and down) */
+
+@media only screen and (max-width: 500px) {
+    div.testimonial.grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px) */
+
+@media only screen and (max-width: 768px) {}

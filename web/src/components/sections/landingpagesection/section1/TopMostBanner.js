@@ -1,9 +1,10 @@
 import React from 'react'
 import {bannerImage} from '../../../../asset/js/ImageAsset'
+import './TopMostBanner.css'
 
 function TopMostBanner() {
     return (
-        <section className="banner mt-1 pt-6">
+        <section className="section1-banner mt-1 pt-6">
         <div className="container grid">
             <div className="banner-text">
                 <h1 className="fw-6">Neque porro quisquam est</h1>

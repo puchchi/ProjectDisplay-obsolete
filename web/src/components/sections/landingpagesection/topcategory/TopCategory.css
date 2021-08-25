@@ -21,3 +21,20 @@ section.top-category-section .btn {
 section.top-category-section div a {
     cursor: pointer;
 }
+
+
+/*Responsive details*/
+
+
+/* Extra small devices (phones, 500px and down) */
+
+@media only screen and (max-width: 500px) {
+    section.top-category-section div.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px) */
+
+@media only screen and (max-width: 768px) {}

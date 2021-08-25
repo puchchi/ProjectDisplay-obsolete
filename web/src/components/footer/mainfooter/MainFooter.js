@@ -21,23 +21,25 @@ function MainFooter() {
                     </div>
 
                 </div>
-                <div className="quick-links flex flex-vertical">
-                    <p className="fw-6">Quick Links</p>
-                    <Link className="mt-1" to="/contactus">Contact us</Link>
-                    <Link to="/tnc">Terms &amp; Condition</Link>
-                    <Link to="/pricing">Pricing</Link>
-                    <Link to="Know the Team">Know the Team</Link>
-                </div>
-                <div className="contact-us flex flex-vertical">
-                    <p className="fw-6">Contact</p>
-                    <div className="mt-1">
-                        <Icon.FaPhoneAlt /><p>000-000-0000</p>
+                <div className="grid">
+                    <div className="quick-links flex flex-vertical">
+                        <p className="fw-6">Quick Links</p>
+                        <Link className="mt-1" to="/contactus">Contact us</Link>
+                        <Link to="/tnc">Terms &amp; Condition</Link>
+                        <Link to="/pricing">Pricing</Link>
+                        <Link to="Know the Team">Know the Team</Link>
                     </div>
-                    <div>
-                        <IconFi.FiMail /><p>info@email.com</p>
-                    </div>
-                    <div>
-                        <IconHi.HiLocationMarker/><p>New Delhi, India</p>
+                    <div className="contact-us flex flex-vertical">
+                        <p className="fw-6">Contact</p>
+                        <div className="mt-1">
+                            <Icon.FaPhoneAlt /><p>000-000-0000</p>
+                        </div>
+                        <div>
+                            <IconFi.FiMail /><p>info@email.com</p>
+                        </div>
+                        <div>
+                            <IconHi.HiLocationMarker /><p>New Delhi, India</p>
+                        </div>
                     </div>
                 </div>
             </div>

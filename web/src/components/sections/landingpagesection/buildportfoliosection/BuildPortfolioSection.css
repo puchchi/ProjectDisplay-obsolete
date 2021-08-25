@@ -1,5 +1,5 @@
 .build-portfolio-section {
-    height: 60rem;
+    height: 50rem;
 }
 
 .build-portfolio-section>div {
@@ -43,4 +43,46 @@
     position: absolute;
     padding-left: 0.5rem;
     height: inherit;
+}
+
+
+/*Responsive details*/
+
+
+/* Extra small devices (phones, 500px and down) */
+
+@media only screen and (max-width: 500px) {
+    .build-portfolio-section {
+        height: auto;
+    }
+    .build-portfolio-section>div.flex {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .build-portfolio-text-section {
+        padding: 0;
+        margin: auto;
+    }
+    .build-portfolio-text-section>* {
+        align-self: center;
+        text-align: center;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px) */
+
+@media only screen and (max-width: 768px) {
+    .build-portfolio-section {
+        height: auto;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 992px) {
+    .build-portfolio-section {
+        height: auto;
+    }
 }

@@ -1,0 +1,21 @@
+/*Responsive details*/
+
+
+/* Extra small devices (phones, 500px and down) */
+
+@media only screen and (max-width: 500px) {
+    .section1-banner div.grid {
+        grid-template-columns: 1fr;
+    }
+    .section1-banner div.banner-text {
+        text-align: center;
+    }
+    .section1-banner hr.underline {
+        margin: 2rem auto;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px) */
+
+@media only screen and (max-width: 768px) {}

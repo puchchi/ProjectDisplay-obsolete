@@ -46,7 +46,7 @@ function BuildPortfolioSection() {
     }, [height, width])
 
     return (
-        <section className="flex mt-13 build-portfolio-section">
+        <section className="build-portfolio-section flex mt-13 ">
             <div className="flex ">
                 <div className="flex flex-vertical build-portfolio-text-section">
                     <h2>Build your

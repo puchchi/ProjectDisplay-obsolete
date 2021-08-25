@@ -2,8 +2,8 @@ section.main-footer-section {
     background-color: var(--color-footer-dark);
 }
 
-section.main-footer-section>div {
-    grid-template-columns: 2fr 1fr 1fr;
+section.main-footer-section>div.container {
+    grid-template-columns: 1fr 1fr;
     align-items: start;
 }
 
@@ -53,3 +53,37 @@ section.main-footer-section div.contact-us svg {
     margin-top: 0.5rem;
     color: var(--color-primary);
 }
+
+section.main-footer-section div.grid {
+    align-items: start;
+}
+
+
+/*Responsive details*/
+
+
+/* Extra small devices (phones, 500px and down) */
+
+@media only screen and (max-width: 500px) {
+    section.main-footer-section>div.container {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 2rem
+    }
+    section.main-footer-section div.about-us-div {
+        margin: auto;
+        padding: 0 4rem;
+        text-align: center;
+    }
+    section.main-footer-section div.about-us-div>* {
+        align-self: center;
+    }
+    section.main-footer-section div.flex {
+        align-items: center;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px) */
+
+@media only screen and (max-width: 768px) {}
