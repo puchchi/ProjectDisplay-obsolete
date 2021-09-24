@@ -1,0 +1,22 @@
+div.myprofile-container.flex {
+    align-items: stretch;
+}
+
+div.myprofile-details {
+    flex-grow: 2;
+}
+
+div.myprofile-basicinfo form {
+    align-items: start;
+}
+
+div.myprofile-basicinfo form>* {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div.myprofile-heading {
+    margin-bottom: 2rem;
+}

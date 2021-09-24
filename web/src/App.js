@@ -11,6 +11,7 @@ import {
 import Home from './components/pages/Home';
 import Signin from './components/pages/Signin';
 import Signup from './components/pages/Signup';
+import MyProfile from './components/pages/MyProfile';
 
 
 function App() {
@@ -28,7 +29,14 @@ function App() {
           <Route exact path="/signup" >
             <Signup />
           </Route>
+          
+          <Route exact path="/myprofile" >
+            <MyProfile/>
+          </Route>
           <Route exact path="/forgotpassword" >
+
+          </Route>
+          <Route exact path="/helpcenter" >
 
           </Route>
         </Switch>

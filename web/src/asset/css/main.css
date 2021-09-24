@@ -3,6 +3,7 @@
 :root {
     --color-primary: #2F9FD9;
     --color-primary-light: #7CCBF3;
+    --color-primary-lighter: #CDEBFB;
     --color-underline: #29B2FE;
     --color-border-primary: #cccccc;
     --color-placeholder-color: #cccccc;
@@ -12,7 +13,8 @@
     --color-text-white: #ffffff;
     --color-background-white: #ffffff;
     --color-box-shadow-dark: rgba(0, 0, 0, 0.1);
-    --color-box-shadow-darker: rgba(0, 0, 0, 0.5);
+    --color-box-shadow-darker: #00000029;
+    --color-box-shadow-darkest: rgba(0, 0, 0, 0.5);
     --color-carousel-background: #ffffff;
     --color-carousel-background2: #bbbbbb;
     --color-carousel-color: #161f2b;
@@ -20,6 +22,7 @@
     --color-footer-dark: #333333;
     --color-footer-darker: #242424;
     --color-footer-light: #EBEBEB;
+    --color-vertical-line: #707070;
     --color-facebook: #3C66C4;
     --color-google: #E02F2F;
 }

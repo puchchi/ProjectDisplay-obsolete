@@ -1,0 +1,25 @@
+div.myprofile-container {
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+div.myprofile-navigation-item {
+    height: 5rem;
+    min-width: 22rem;
+    padding: 0 2rem;
+}
+
+div.myprofile-navigation-item>span {
+    line-height: 5rem;
+}
+
+div.myprofile-navigation-item.active {
+    background-color: var(--color-primary-lighter);
+    border-radius: 0.8rem;
+    color: var(--color-primary);
+}
+
+div.myprofile-container .vertical-line {
+    border: 0.5px solid var(--color-vertical-line);
+    min-height: 20rem;
+}
